@@ -1,0 +1,13 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/danijnog/Projeto_PDS2'
+ 
+g++ -std=c++11 -Wall -o obj/caixa.o -c src/caixa.cpp
+g++ -std=c++11 -Wall -o obj/gerente.o -c src/gerente.cpp
+g++ -std=c++11 -Wall -o obj/funcionario.o -c src/funcionario.cpp
+g++ -std=c++11 -Wall -o obj/supermercado.o -c src/supermercado.cpp
+g++ -std=c++11 -Wall -o obj/cliente.o -c src/cliente.cpp
+g++ -std=c++11 -Wall -o obj/produto.o -c src/produto.cpp
+g++ -std=c++11 -Wall -o e-commerce obj/caixa.o obj/gerente.o obj/funcionario.o obj/supermercado.o obj/cliente.o obj/produto.o 
+ 
+make: Leaving directory '/home/danijnog/Projeto_PDS2'
+ 

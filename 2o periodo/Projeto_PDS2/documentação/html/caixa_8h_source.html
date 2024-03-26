@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>E-Commerce: Código-Fonte de include/caixa.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">E-Commerce<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Trabalho de PDS2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">caixa.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="caixa_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CAIXA_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CAIXA_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="produto_8h.html">produto.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="supermercado_8h.html">supermercado.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="cliente_8h.html">cliente.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html">std</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_caixa.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_caixa.html">Caixa</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_funcionario.html">Funcionario</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    list&lt;Produto&gt; *_notaFiscal;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <a class="code hl_function" href="class_caixa.html#a75ab64bcbe649f544f7464b0edc8ca3a">Caixa</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="class_caixa.html#a6804aed06b0ece872a45875452d38410">emitirNotaFiscal</a>(<a class="code hl_class" href="class_cliente.html">Cliente</a> c); <span class="comment">//emitir a nota fiscal de um produto comprado</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>         </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_caixa_html"><div class="ttname"><a href="class_caixa.html">Caixa</a></div><div class="ttdef"><b>Definition:</b> caixa.h:13</div></div>
+<div class="ttc" id="aclass_caixa_html_a6804aed06b0ece872a45875452d38410"><div class="ttname"><a href="class_caixa.html#a6804aed06b0ece872a45875452d38410">Caixa::emitirNotaFiscal</a></div><div class="ttdeci">void emitirNotaFiscal(Cliente c)</div><div class="ttdoc">Método que emite a nota fiscal no cmd.</div><div class="ttdef"><b>Definition:</b> caixa.cpp:13</div></div>
+<div class="ttc" id="aclass_caixa_html_a75ab64bcbe649f544f7464b0edc8ca3a"><div class="ttname"><a href="class_caixa.html#a75ab64bcbe649f544f7464b0edc8ca3a">Caixa::Caixa</a></div><div class="ttdeci">Caixa(string nome, int id)</div><div class="ttdoc">Metodo construtor de um caixa.</div><div class="ttdef"><b>Definition:</b> caixa.cpp:8</div></div>
+<div class="ttc" id="aclass_cliente_html"><div class="ttname"><a href="class_cliente.html">Cliente</a></div><div class="ttdef"><b>Definition:</b> cliente.h:11</div></div>
+<div class="ttc" id="aclass_funcionario_html"><div class="ttname"><a href="class_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:8</div></div>
+<div class="ttc" id="acliente_8h_html"><div class="ttname"><a href="cliente_8h.html">cliente.h</a></div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> doctest.h:499</div></div>
+<div class="ttc" id="aproduto_8h_html"><div class="ttname"><a href="produto_8h.html">produto.h</a></div></div>
+<div class="ttc" id="asupermercado_8h_html"><div class="ttname"><a href="supermercado_8h.html">supermercado.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

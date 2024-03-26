@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>E-Commerce: Referência do Arquivo tests/funcionario_test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">E-Commerce<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Trabalho de PDS2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo funcionario_test.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="funcionario_8h_source.html">../include/funcionario.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="doctest_8h_source.html">../third_party/doctest.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4831506418782cea7ae60036ece77ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcionario__test_8cpp.html#a4831506418782cea7ae60036ece77ee5">TEST_CASE</a> (&quot;Testando o funcionario&quot;)</td></tr>
+<tr class="separator:a4831506418782cea7ae60036ece77ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="a4831506418782cea7ae60036ece77ee5" name="a4831506418782cea7ae60036ece77ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4831506418782cea7ae60036ece77ee5">&#9670;&nbsp;</a></span>TEST_CASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Testando o funcionario&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    4</span>                                    {</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_class" href="class_funcionario.html">Funcionario</a> f = <a class="code hl_class" href="class_funcionario.html">Funcionario</a>(<span class="stringliteral">&quot;Joao&quot;</span>, 1);</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_define" href="doctest_8h.html#ad57835ba8f1bb419a865ada6bd011a85">REQUIRE</a>(f.<a class="code hl_function" href="class_funcionario.html#a13f42e2a8cb0515371b49745e5830c4c">getNome</a>() == <span class="stringliteral">&quot;Joao&quot;</span>);</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_define" href="doctest_8h.html#ad57835ba8f1bb419a865ada6bd011a85">REQUIRE</a>(f.<a class="code hl_function" href="class_funcionario.html#a0288286a907e587b7ab75d6c23354a06">getId</a>() == 1);</div>
+<div class="line"><span class="lineno">    8</span>    </div>
+<div class="line"><span class="lineno">    9</span>    <span class="comment">//testar o setNome e setId</span></div>
+<div class="line"><span class="lineno">   10</span>    f.<a class="code hl_function" href="class_funcionario.html#aa7876648c2ad5e3f4d3befcabcce0b1c">setNome</a>(<span class="stringliteral">&quot;Maria&quot;</span>);</div>
+<div class="line"><span class="lineno">   11</span>    f.<a class="code hl_function" href="class_funcionario.html#acc0b430d08b2c459682d7bb01c0ab1c4">setId</a>(2);</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_define" href="doctest_8h.html#ad57835ba8f1bb419a865ada6bd011a85">REQUIRE</a>(f.<a class="code hl_function" href="class_funcionario.html#a13f42e2a8cb0515371b49745e5830c4c">getNome</a>() == <span class="stringliteral">&quot;Maria&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>    <a class="code hl_define" href="doctest_8h.html#ad57835ba8f1bb419a865ada6bd011a85">REQUIRE</a>(f.<a class="code hl_function" href="class_funcionario.html#a0288286a907e587b7ab75d6c23354a06">getId</a>() == 2);</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_funcionario_html"><div class="ttname"><a href="class_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:8</div></div>
+<div class="ttc" id="aclass_funcionario_html_a0288286a907e587b7ab75d6c23354a06"><div class="ttname"><a href="class_funcionario.html#a0288286a907e587b7ab75d6c23354a06">Funcionario::getId</a></div><div class="ttdeci">int getId()</div><div class="ttdoc">Método que retorna o id do funcionario.</div><div class="ttdef"><b>Definition:</b> funcionario.cpp:23</div></div>
+<div class="ttc" id="aclass_funcionario_html_a13f42e2a8cb0515371b49745e5830c4c"><div class="ttname"><a href="class_funcionario.html#a13f42e2a8cb0515371b49745e5830c4c">Funcionario::getNome</a></div><div class="ttdeci">string getNome()</div><div class="ttdoc">Método que retorna o nome do funcionario.</div><div class="ttdef"><b>Definition:</b> funcionario.cpp:15</div></div>
+<div class="ttc" id="aclass_funcionario_html_aa7876648c2ad5e3f4d3befcabcce0b1c"><div class="ttname"><a href="class_funcionario.html#aa7876648c2ad5e3f4d3befcabcce0b1c">Funcionario::setNome</a></div><div class="ttdeci">void setNome(string nome)</div><div class="ttdoc">Método que introduz um nome a um funcionario.</div><div class="ttdef"><b>Definition:</b> funcionario.cpp:11</div></div>
+<div class="ttc" id="aclass_funcionario_html_acc0b430d08b2c459682d7bb01c0ab1c4"><div class="ttname"><a href="class_funcionario.html#acc0b430d08b2c459682d7bb01c0ab1c4">Funcionario::setId</a></div><div class="ttdeci">void setId(int id)</div><div class="ttdoc">Método que introduz um id a um funcionario.</div><div class="ttdef"><b>Definition:</b> funcionario.cpp:19</div></div>
+<div class="ttc" id="adoctest_8h_html_ad57835ba8f1bb419a865ada6bd011a85"><div class="ttname"><a href="doctest_8h.html#ad57835ba8f1bb419a865ada6bd011a85">REQUIRE</a></div><div class="ttdeci">#define REQUIRE(...)</div><div class="ttdef"><b>Definition:</b> doctest.h:2934</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

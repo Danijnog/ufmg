@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>E-Commerce: Código-Fonte de include/gerente.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">E-Commerce<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Trabalho de PDS2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">gerente.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="gerente_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GERENTE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GERENTE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="supermercado_8h.html">supermercado.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html">std</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_gerente.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gerente.html">Gerente</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_funcionario.html">Funcionario</a>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>      <a class="code hl_class" href="class_supermercado.html">Supermercado</a> *_supermercado_referente; <span class="comment">//o gerente tem que ser gerente de algum supermercado, esse supermercado </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                                            <span class="comment">//sera o &quot;supermercado referente&quot; a esse gerente</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                                            <span class="comment">//alterei o supermercado para ponteiro, caso contrario, a funcao consulta_saldo_caixa</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                                              <span class="comment">//nao retorna valor atualizado caso um cliente tenha comprado algo</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      <a class="code hl_function" href="class_gerente.html#a5a685ad5f8e7e2629c13099991429a3d">Gerente</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code hl_class" href="class_supermercado.html">Supermercado</a> *s );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordtype">float</span> <a class="code hl_function" href="class_gerente.html#aa28d5e09678b3a053d74fb1d3461b31e">consulta_saldo_caixa</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="class_gerente.html#add3ae3a5058d1a8f26b90bb18551abc9">atualiza_promocoes</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="class_gerente.html#a96afc5bf362cae95a60bc3089eca50dd">atualiza_estoque</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="class_gerente.html#ad5a6a0f2d3b12e13158476557fe8a63a">ver_qtd_produtos</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_funcionario_html"><div class="ttname"><a href="class_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:8</div></div>
+<div class="ttc" id="aclass_gerente_html"><div class="ttname"><a href="class_gerente.html">Gerente</a></div><div class="ttdef"><b>Definition:</b> gerente.h:9</div></div>
+<div class="ttc" id="aclass_gerente_html_a5a685ad5f8e7e2629c13099991429a3d"><div class="ttname"><a href="class_gerente.html#a5a685ad5f8e7e2629c13099991429a3d">Gerente::Gerente</a></div><div class="ttdeci">Gerente(string nome, int id, Supermercado *s)</div><div class="ttdoc">Método contrutor de um Gerente.</div><div class="ttdef"><b>Definition:</b> gerente.cpp:9</div></div>
+<div class="ttc" id="aclass_gerente_html_a96afc5bf362cae95a60bc3089eca50dd"><div class="ttname"><a href="class_gerente.html#a96afc5bf362cae95a60bc3089eca50dd">Gerente::atualiza_estoque</a></div><div class="ttdeci">void atualiza_estoque()</div><div class="ttdoc">Atualiza o nomero de produtos no estoque.</div><div class="ttdef"><b>Definition:</b> gerente.cpp:24</div></div>
+<div class="ttc" id="aclass_gerente_html_aa28d5e09678b3a053d74fb1d3461b31e"><div class="ttname"><a href="class_gerente.html#aa28d5e09678b3a053d74fb1d3461b31e">Gerente::consulta_saldo_caixa</a></div><div class="ttdeci">float consulta_saldo_caixa()</div><div class="ttdoc">Método que retorna o saldo do caixa.</div><div class="ttdef"><b>Definition:</b> gerente.cpp:16</div></div>
+<div class="ttc" id="aclass_gerente_html_ad5a6a0f2d3b12e13158476557fe8a63a"><div class="ttname"><a href="class_gerente.html#ad5a6a0f2d3b12e13158476557fe8a63a">Gerente::ver_qtd_produtos</a></div><div class="ttdeci">void ver_qtd_produtos()</div><div class="ttdoc">Método que imprime a quantidade de cada produto.</div><div class="ttdef"><b>Definition:</b> gerente.cpp:28</div></div>
+<div class="ttc" id="aclass_gerente_html_add3ae3a5058d1a8f26b90bb18551abc9"><div class="ttname"><a href="class_gerente.html#add3ae3a5058d1a8f26b90bb18551abc9">Gerente::atualiza_promocoes</a></div><div class="ttdeci">void atualiza_promocoes()</div><div class="ttdoc">Atualiza a lista de promoções.</div><div class="ttdef"><b>Definition:</b> gerente.cpp:20</div></div>
+<div class="ttc" id="aclass_supermercado_html"><div class="ttname"><a href="class_supermercado.html">Supermercado</a></div><div class="ttdef"><b>Definition:</b> supermercado.h:17</div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> doctest.h:499</div></div>
+<div class="ttc" id="asupermercado_8h_html"><div class="ttname"><a href="supermercado_8h.html">supermercado.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
