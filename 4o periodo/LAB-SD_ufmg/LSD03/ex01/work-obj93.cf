@@ -1,0 +1,8 @@
+v 4
+file . "tb_model.vhd" "dc6ecc6b411eaaadd801fbf4b25767fdf56708fd" "20230316191256.726":
+  entity tb_model at 5( 120) + 0 on 13;
+  architecture tb of tb_model at 11( 198) + 0 on 14;
+  configuration cfg_tb_model at 70( 1693) + 0 on 15;
+file . "model_1.vhd" "f27ddc074744a19ed225fa8e9ec92dc2279b3ee0" "20230316191256.725":
+  entity model_1 at 3( 37) + 0 on 11;
+  architecture main of model_1 at 13( 258) + 0 on 12;

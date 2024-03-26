@@ -1,0 +1,7 @@
+v 4
+file . "tb_model2.vhd" "a9e4b6a76ae7ce07a3fc772c07debfdb6583c83b" "20230316192435.480":
+  entity tb_model2 at 1( 0) + 0 on 13;
+  architecture test of tb_model2 at 7( 84) + 0 on 14;
+file . "model_2.vhd" "83a6364903f31bb350bdd771759ce49ea2252432" "20230316192416.999":
+  entity model_2 at 3( 37) + 0 on 11;
+  architecture main of model_2 at 14( 193) + 0 on 12;

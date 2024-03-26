@@ -1,0 +1,7 @@
+v 4
+file . "tb_read_from_extern.vhd" "6a8aead2abc7587548bce2390cf5d918ed03713e" "20230515232641.471":
+  entity tb_read_from_extern at 1( 0) + 0 on 13;
+  architecture tb_arch of tb_read_from_extern at 9( 155) + 0 on 14;
+file . "read_from_extern.vhd" "740926d2592fb6bfd58f3f307b6dd83b8b4c05f4" "20230515232641.469":
+  entity read_from_extern at 3( 51) + 0 on 11;
+  architecture ex_01_arch of read_from_extern at 14( 253) + 0 on 12;

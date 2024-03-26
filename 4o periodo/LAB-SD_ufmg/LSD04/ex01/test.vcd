@@ -1,0 +1,45 @@
+$date
+  Sun Mar 26 10:58:59 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb_my_ex01 $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # s $end
+$scope module instancia_my_ex01 $end
+$var reg 1 $ a $end
+$var reg 1 % b $end
+$var reg 1 & s $end
+$var reg 2 ' ab[1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+b00 '
+#20000000
+1!
+1#
+1$
+1&
+b10 '
+#60000000
+0!
+1"
+0$
+1%
+b01 '

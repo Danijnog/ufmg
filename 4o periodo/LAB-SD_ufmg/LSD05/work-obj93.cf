@@ -1,0 +1,7 @@
+v 4
+file . "tb_funcao.vhd" "b5c9d21ac75243f052052ba492b9074221c7be72" "20230404011009.230":
+  entity tb_funcao at 1( 0) + 0 on 13;
+  architecture testbench of tb_funcao at 8( 110) + 0 on 14;
+file . "funcao.vhd" "1c59e0ff83098d4273fe2a122a3ecefd94482ebe" "20230404011009.229":
+  entity funcao at 7( 320) + 0 on 11;
+  architecture main of funcao at 18( 673) + 0 on 12;

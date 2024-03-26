@@ -1,0 +1,7 @@
+v 4
+file . "flipflopT.vhd" "c57089af16e671af4d3ef41c2c246baf4636b9a1" "20230417231352.425":
+  entity flipflop_t at 5( 290) + 0 on 23;
+  architecture main of flipflop_t at 18( 622) + 0 on 24;
+file . "flipflopT_tb.vhd" "dd9b2f614b30a7c8f111d085c9300895ab985c64" "20230417231352.425":
+  entity flipflopt_tb at 1( 0) + 0 on 25;
+  architecture test of flipflopt_tb at 7( 81) + 0 on 26;
